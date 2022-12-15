@@ -18,7 +18,7 @@ Console.WriteLine("+");
 int x = xa, y = xb;
 int count = 0;
 
-while (count < 10)
+while (count < 100)
 {
     int what = new Random().Next(0,3);
     if (what == 0)
@@ -38,6 +38,6 @@ while (count < 10)
         y = (y + yc) / 2;
     }
     Console.SetCursorPosition(x, y);
-    Console.WriteLine("+");
-    count = count + 1; // count ++ тоже самое
+    Console.Write("+");
+    count += 1; // count ++ тоже самое
 }
